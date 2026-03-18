@@ -1,0 +1,11 @@
+Origin: MrPewiOS Repo
+Label: iPhone/iPad-Jailbreak
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
+Components: main
+Description: Apple-Support
+MD5Sum:
+6231e216e71de4309c53aea659f4e0ad4f1b955d Packages
+524c41ba4291ab7a88a4e372f2cc0c1608aee8a7 Packages.bz2
