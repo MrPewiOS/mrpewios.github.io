@@ -11,6 +11,7 @@
 <style>
 body {
     font-family: 'Nunito', sans-serif;
+    background: #0B0B15;
 }
 
 /* card */
@@ -40,76 +41,79 @@ body {
     </div>
 
     <!-- SEARCH -->
-    <input type="text" placeholder="Tìm app..."
-    class="w-full mb-6 px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:outline-none">
+    <input type="text" id="searchInput" placeholder="Tìm app..."
+    class="w-full mb-6 px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:outline-none focus:border-blue-500">
 
     <!-- LIST -->
     <div id="appList" class="space-y-4">
 
-        <!-- APP -->
+        <!-- APP 1: TikTok++ -->
         <div class="flex items-center gap-4 p-3 bg-white/5 rounded-2xl card glow">
-
             <img src="https://mrpewios.github.io/tiktok.webp"
-            class="w-16 h-16 rounded-xl">
-
+            class="w-16 h-16 rounded-xl" onerror="this.src='https://via.placeholder.com/64?text=TikTok'">
             <div class="flex-1">
                 <div class="font-bold">
                     TikTok++
                     <span class="text-[10px] bg-pink-500 px-2 py-0.5 rounded-full ml-2">HOT</span>
                 </div>
-                <div class="text-sm text-gray-400">Không qc,tải video kh qc,ẩn danh</div>
+                <div class="text-sm text-gray-400">Không qc, tải video kh qc, ẩn danh</div>
             </div>
-
-            <a href="#"
-            class="bg-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-blue-500 hover:text-white transition">
-            GET
+            <a href="#" class="bg-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-blue-500 hover:text-white transition">
+                GET
             </a>
-
         </div>
 
-        <!-- APP -->
+        <!-- APP 2: Palera1n Roothide -->
         <div class="flex items-center gap-4 p-3 bg-white/5 rounded-2xl card glow">
-
-            <img src="https://mrpewios.github.io/youtube.webp"
-            class="w-16 h-16 rounded-xl">
-
+            <img src="https://mrpewios.github.io/palera1n.webp"
+            class="w-16 h-16 rounded-xl" onerror="this.src='https://via.placeholder.com/64?text=Palera1n'">
             <div class="flex-1">
                 <div class="font-bold">Palera1n Roothide</div>
                 <div class="text-sm text-gray-400">Ẩn Jailbreak cho máy.Hỗ trợ A8-A11.Pass file rar:123</div>
             </div>
-
-            <a href="#"
-            class="bg-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-blue-500 hover:text-white transition">
-            <a href="https://www.mediafire.com/file/gu4k90bdncc4nyi/Winra1n+2.1+-+Palera1n+Windows.rar/file">GET</a>
-            </a>
-        
-            
-            <div class="text-center mt-10">
-            <a href="https://mrpewios.github.io/donate.html"
-            class="bg-pink-500 px-6 py-3 rounded-full font-bold hover:scale-110 transition">
-            ❤️ Ủng hộ tôi 1 ly cafe
+            <a href="https://www.mediafire.com/file/gu4k90bdncc4nyi/Winra1n+2.1+-+Palera1n+Windows.rar/file" target="_blank" class="bg-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-blue-500 hover:text-white transition">
+                GET
             </a>
         </div>
 
     </div>
 
+    <!-- Nút Donate -->
+    <div class="text-center mt-10">
+        <a href="https://mrpewios.github.io/donate.html"
+        class="bg-pink-500 px-6 py-3 rounded-full font-bold hover:scale-110 transition inline-block">
+        ❤️ Ủng hộ tôi 1 ly cafe
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-sm mt-12 pb-6">
+        Copyright © 2026 - 2031 QuangGiap • MrPewiOS
+    </div>
+
 </div>
 
-<!-- SEARCH SCRIPT -->
-<div class="text-center text-gray-500 text-sm mt-12 pb-6">
-       Copyright © 2026 -2031 QuangGiap • MrPewiOS
-    <script>
-const searchInput = document.querySelector("input");
-const apps = document.querySelectorAll("#appList > div");
+<script>
+// SCRIPT TÌM KIẾM
+const searchInput = document.getElementById("searchInput");
+const appItems = document.querySelectorAll("#appList > div");
 
-searchInput.addEventListener("keyup", function() {
-    let value = this.value.toLowerCase();
-
-    apps.forEach(app => {
-        let text = app.innerText.toLowerCase();
-        app.style.display = text.includes(value) ? "flex" : "none";
+// Hàm lọc app
+function filterApps() {
+    const keyword = searchInput.value.toLowerCase().trim();
+    
+    appItems.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        if (keyword === "" || text.includes(keyword)) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
     });
-});
+}
+
+// Lắng nghe sự kiện gõ phím
+searchInput.addEventListener("keyup", filterApps);
 </script>
 
 </body>
