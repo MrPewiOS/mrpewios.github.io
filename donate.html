@@ -1,216 +1,173 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ủng Hộ MrPewiOS</title>
-    
-    <meta name="google-site-verification" content="UvCQ1cyCw8prMQgwGKNOLe_ChzDAtR7Kz05jAvuxrQQ" />
-    <meta name="description" content="Ủng hộ MrPewiOS Repo - Chung tay phát triển cộng đồng Jailbreak iOS Việt Nam.">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ủng hộ | MrPewiOS ❤️</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="https://ibb.co/jZzQrHb8" type="image/x-icon">
-    
-    <script>
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
-    
-    <style>
-        html { background-color: #f3f4f6; }
-        html.dark { background-color: #0B0B15; }
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 10px; }
-    </style>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Nunito', 'sans-serif'] },
-                    colors: {
-                        'dark-bg': '#0B0B15',
-                        'glass-dark': 'rgba(20, 20, 30, 0.6)',
-                        'glass-border': 'rgba(255, 255, 255, 0.08)',
-                    },
-                    animation: {
-                        'fade-down': 'fadeDown 0.8s ease-out',
-                        'fade-up': 'fadeUp 0.8s ease-out 0.1s backwards',
-                        'blob': 'blob 7s infinite',
-                    },
-                    keyframes: {
-                        fadeDown: { '0%': { opacity: '0', transform: 'translateY(-20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
-                        fadeUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
-                        blob: {
-                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-                            '100%': { transform: 'translate(0px, 0px) scale(1)' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #0B0B15 0%, #13132B 100%);
+    min-height: 100vh;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(236,72,153,0.4);
+    box-shadow: 0 20px 35px -15px rgba(0,0,0,0.5);
+}
+
+.qr-code {
+    transition: all 0.3s;
+}
+
+.qr-code:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px rgba(236,72,153,0.5));
+}
+
+.copy-btn {
+    transition: all 0.2s;
+}
+
+.copy-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.heart-icon {
+    animation: float 2s ease-in-out infinite;
+    display: inline-block;
+}
+</style>
 </head>
 
-<body class="bg-dark-bg text-white font-sans antialiased min-h-screen relative transition-colors duration-300 dark:bg-dark-bg bg-gray-100 dark:text-white text-gray-900 selection:bg-pink-500 selection:text-white">
+<body class="text-white p-4 md:p-6">
 
-    <div class="fixed inset-0 z-[-1] hidden dark:block pointer-events-none">
-        <div class="absolute top-0 left-[-10%] w-[500px] h-[500px] bg-purple-600/20 rounded-full mix-blend-screen filter blur-[100px] opacity-50 animate-blob transform-gpu"></div>
-        <div class="absolute top-[20%] right-[-10%] w-[400px] h-[400px] bg-pink-600/20 rounded-full mix-blend-screen filter blur-[100px] opacity-50 animate-blob animation-delay-2000 transform-gpu"></div>
-        <div class="absolute bottom-[-10%] left-[20%] w-[600px] h-[600px] bg-blue-600/10 rounded-full mix-blend-screen filter blur-[100px] opacity-30 animate-blob animation-delay-4000 transform-gpu"></div>
+<div class="max-w-2xl mx-auto">
+
+    <!-- Nút quay lại -->
+    <div class="mb-6">
+        <a href="https://mrpewios.github.io" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Quay lại trang chủ
+        </a>
     </div>
 
-    <div class="fixed inset-0 z-[-2] bg-white/50 dark:hidden pointer-events-none"></div>
+    <!-- Header -->
+    <div class="text-center mb-10">
+        <div class="heart-icon text-6xl mb-4">❤️</div>
+        <h1 class="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-pink-400 via-red-400 to-pink-500 bg-clip-text text-transparent">
+            Ủng hộ MrPewiOS
+        </h1>
+        <p class="text-gray-400 mt-3 text-lg">
+            Cảm ơn bạn đã đồng hành! Mỗi đóng góp giúp mình duy trì kho IPA và phát triển thêm nhiều tính năng mới.
+        </p>
+    </div>
 
-    <div id="copy-toast" class="fixed top-5 left-0 right-0 mx-auto w-max opacity-0 transition-opacity duration-300 z-50 pointer-events-none">
-        <div class="bg-white/10 backdrop-blur-xl border border-white/10 text-white px-5 py-2.5 rounded-full shadow-2xl font-bold flex items-center gap-2 text-sm dark:bg-white/10 dark:text-white bg-white text-green-600 border-gray-200">
-            <i class="fa-solid fa-check"></i> Đã sao chép!
+    <!-- Chuyển khoản ngân hàng -->
+    <div class="card bg-white/5 backdrop-blur rounded-2xl p-6 mb-6">
+        <div class="text-center">
+            <div class="text-4xl mb-3">🏦</div>
+            <h3 class="text-xl font-bold mb-2">Chuyển khoản ngân hàng</h3>
+            <p class="text-gray-400 text-sm mb-4">Ngân Hàng Nào Cũng Nhận</p>
+        </div>
+        
+        <div class="bg-white/10 rounded-xl p-4 mb-4">
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+                <span class="text-gray-400">Ngân hàng:</span>
+                <span class="font-semibold">Bản Việt</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+                <span class="text-gray-400">Số tài khoản:</span>
+                <div class="flex items-center gap-2">
+                    <span class="font-mono font-semibold">99ZP25341M38014989</span>
+                    <button onclick="copyText('123456789012')" class="copy-btn text-gray-400 hover:text-white text-xs px-2 py-1 rounded">
+                        📋
+                    </button>
+                </div>
+            </div>
+            <div class="flex justify-between items-center py-2">
+                <span class="text-gray-400">Chủ tài khoản:</span>
+                <span class="font-semibold">Phung Quang Giap</span>
+            </div>
+        </div>
+        
+        <div class="bg-pink-500/10 border border-pink-500/30 rounded-xl p-3">
+            <p class="text-xs text-center text-pink-300">📝 Nội dung chuyển khoản: <span class="font-semibold">Donate + Tên của bạn</span></p>
         </div>
     </div>
 
-    <div class="w-full max-w-2xl mx-auto relative z-10">
+    <!-- VietQR -->
+    <div class="card bg-white/5 backdrop-blur rounded-2xl p-6 text-center">
+        <div class="text-4xl mb-3">📱</div>
+        <h3 class="text-xl font-bold mb-2">VietQR</h3>
+        <p class="text-gray-400 text-sm mb-4">Quét mã QR để chuyển khoản nhanh</p>
         
-        <main class="container mx-auto px-4 py-8">
-            
-            <header class="flex flex-col items-center justify-center text-center mb-8 animate-fade-down">
-                
-                <div class="inline-flex justify-center items-center bg-white/70 dark:bg-glass-dark backdrop-blur-xl border border-gray-200 dark:border-glass-border rounded-full p-1.5 mb-8 shadow-lg gap-1 transition-colors duration-300">
-                    <a href="https://mrpewios.github.io/page.html" class="px-4 py-2 rounded-full font-bold text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 dark:hover:text-white transition-all">Kho IPA</a>
-                    <a href="https://mrpewios.github.io/" class="px-4 py-2 rounded-full font-bold text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 dark:hover:text-white transition-all">Trang chủ</a>
-                    <a href="https://mrpewios.github.io/dylib.html" class="px-4 py-2 rounded-full font-bold text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 dark:hover:text-white transition-all">Kho Dylib</a>
-                    
-                    <button id="theme-toggle-btn" class="px-3 py-2 rounded-full font-bold text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 dark:hover:text-white transition-all cursor-pointer">
-                        <i class="fas fa-sun" id="theme-icon"></i>
-                    </button>
-                </div>
-
-                <div class="relative group mb-6">
-                    <div class="absolute -inset-1 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-full opacity-0 dark:opacity-60 blur group-hover:opacity-100 transition duration-500"></div>
-                    <img src="https://mrpewios.github.io/avatar.webp" alt="Avatar" class="relative w-32 h-32 rounded-full object-cover border-4 border-cyan-400 bg-white dark:bg-black shadow-2xl group-hover:rotate-[360deg] transition-transform duration-700 ease-in-out">
-                </div>
-                
-                <h1 class="text-4xl font-extrabold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 dark:from-cyan-400 dark:via-white dark:to-purple-400 animate-gradient-text drop-shadow-lg pb-1">
-                    MrPewiOS DONATE
-                </h1>
-                
-                <p class="text-lg text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed font-medium">
-                    Nhận mua hộ Tweak có phí của Havoc và niceOS<br>
-                    Hoặc ủng hộ qua số tài khoản & quét mã QR bên dưới
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-500 mt-2 italic">(Lưu ý: Nhớ ghi rõ nội dung, mục đích khi thanh toán nha!)</p>
-            </header>
-
-            <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-8 animate-fade-up">
-                <a href="https://t.me/MrPewiOS" class="flex items-center justify-center p-3 rounded-xl bg-white/70 dark:bg-zinc-900/60 border border-gray-200 dark:border-white/10 text-blue-600 dark:text-blue-400 font-bold text-sm hover:bg-blue-50 dark:hover:bg-blue-500/10 hover:border-blue-500 transition-all backdrop-blur-md shadow-sm">
-                    <i class="fab fa-telegram-plane mr-2 text-xl"></i> Liên hệ Telegram
-                </a>
-                <a href="https://www.facebook.com/MrPewDz/" class="flex items-center justify-center p-3 rounded-xl bg-white/70 dark:bg-zinc-900/60 border border-gray-200 dark:border-white/10 text-blue-700 dark:text-blue-600 font-bold text-sm hover:bg-blue-50 dark:hover:bg-blue-600/10 hover:border-blue-600 transition-all backdrop-blur-md shadow-sm">
-                    <i class="fab fa-facebook mr-2 text-xl"></i> Liên hệ Facebook
-                </a>
-            </section>
-
-            <section class="flex flex-col gap-6 w-full mb-10 animate-fade-up delay-100">
-                
-                <div class="bg-white/70 dark:bg-glass-dark border border-gray-200 dark:border-glass-border backdrop-blur-xl rounded-3xl p-6 shadow-xl hover:border-blue-400/30 hover:shadow-blue-500/10 transition-all duration-300 group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-blue-600 dark:text-blue-400 font-extrabold text-lg uppercase tracking-wide mb-1">Ngân hàng Bản Việt</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-semibold">Chủ TK: PHUNG QUANG GIAP</p>
-                        </div>
-                        <img src="https://mrpewios.github.io/ungho.webp" alt="ZALOPAY QR" class="w-16 h-16 rounded-xl border border-gray-200 dark:border-white/10 group-hover:scale-105 transition-transform bg-white dark:bg-white/5">
-                    </div>
-                    
-                    <div class="bg-gray-100 dark:bg-black/30 rounded-xl p-3 flex items-center justify-between border border-gray-200 dark:border-white/5">
-                        <span id="acb-account" class="font-mono text-xl font-bold text-gray-800 dark:text-white tracking-widest pl-2">99ZP25341M38014989</span>
-                        <button onclick="copyToClipboard('acb-account')" class="bg-white dark:bg-white/10 hover:bg-blue-500 hover:text-white text-gray-600 dark:text-gray-300 p-2 px-4 rounded-lg transition-all text-sm font-bold uppercase tracking-wider flex items-center gap-2 shadow-sm border border-gray-200 dark:border-transparent">
-                            <i class="fa-regular fa-copy"></i> Sao chép
-                        </button>
-                    </div>
-                </div>
-
-                <div class="bg-white/70 dark:bg-glass-dark border border-gray-200 dark:border-glass-border backdrop-blur-xl rounded-3xl p-6 shadow-xl hover:border-pink-400/30 hover:shadow-pink-500/10 transition-all duration-300 group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-pink-600 dark:text-pink-500 font-extrabold text-lg uppercase tracking-wide mb-1">Ngân hàng Bản Việt (MoMo)</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-semibold">Chủ TK: PHUNG QUANG GIAP</p>
-                        </div>
-                        <img src="Chưa Có" alt="Momo QR" class="w-16 h-16 rounded-xl border border-gray-200 dark:border-white/10 group-hover:scale-105 transition-transform bg-white dark:bg-white/5">
-                    </div>
-                    
-                    <div class="bg-gray-100 dark:bg-black/30 rounded-xl p-3 flex items-center justify-between border border-gray-200 dark:border-white/5">
-                        <span id="momo-account" class="font-mono text-sm sm:text-lg font-bold text-gray-800 dark:text-white tracking-wide pl-2 truncate mr-2">Hiện Chưa Có</span>
-                        <button onclick="copyToClipboard('momo-account')" class="bg-white dark:bg-white/10 hover:bg-pink-500 hover:text-white text-gray-600 dark:text-gray-300 p-2 px-4 rounded-lg transition-all text-sm font-bold uppercase tracking-wider flex items-center gap-2 shrink-0 shadow-sm border border-gray-200 dark:border-transparent">
-                            <i class="fa-regular fa-copy"></i> Sao chép
-                        </button>
-                    </div>
-                </div>
-
-            </section>
-
-            <div class="text-center animate-fade-up delay-100">
-                <p class="text-gray-600 dark:text-gray-300 font-medium mb-8 px-4 leading-relaxed bg-white/50 dark:bg-white/5 py-4 rounded-2xl border border-gray-200 dark:border-white/5">
-                    Sự ủng hộ của bạn là động lực to lớn để <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 dark:from-cyan-400 dark:to-purple-400 font-bold">MrPewiOS Repo</span> tiếp tục phát triển. Xin chân thành cảm ơn! ❤️
-                </p>
-                
-                <div class="mt-16 text-center text-sm pb-8 border-t border-gray-200 dark:border-white/5 pt-8">
-                    <p class="text-gray-500 dark:text-gray-400 font-bold">Copyright © 2026 - 2030 QuangGiap • MrPewiOS Repo</p>
-                </footer>
-            </div>
-        </main>
+        <div class="flex justify-center mb-4">
+            <img src="https://mrpewios.github.io/ungho.webp" 
+                 alt="ZaloPay" 
+                 class="qr-code w-40 h-40 rounded-xl bg-white p-2">
+        </div>
+        <p class="text-xs text-gray-400">Quét bằng app ngân hàng hỗ trợ VietQR</p>
     </div>
 
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle-btn');
-        const themeIcon = document.getElementById('theme-icon');
-        const currentTheme = localStorage.getItem('theme') || 'dark';
+    <!-- Lời cảm ơn -->
+    <div class="text-center mt-10 mb-8">
+        <p class="text-gray-400 text-sm">
+            "Mỗi đóng góp dù nhỏ cũng là động lực lớn để mình phát triển dự án này. <br>
+            Cảm ơn bạn đã đồng hành cùng <span class="text-pink-400 font-semibold">MrPewiOS</span>! ❤️"
+        </p>
+    </div>
 
-        function setTheme(theme) {
-            if (theme === 'dark') {
-                document.documentElement.classList.add('dark');
-                themeIcon.className = 'fas fa-sun';
-            } else {
-                document.documentElement.classList.remove('dark');
-                themeIcon.className = 'fas fa-moon';
-            }
-            localStorage.setItem('theme', theme);
-        }
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs pb-6 border-t border-white/10 pt-6">
+        Copyright © 2026 - 2031 QuangGiap • MrPewiOS Repo 👑
+    </div>
+</div>
 
-        setTheme(currentTheme);
+<script>
+// Hàm copy text
+function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Tạo thông báo tạm thời
+        const toast = document.createElement('div');
+        toast.innerText = '✅ Đã copy: ' + text;
+        toast.style.position = 'fixed';
+        toast.style.bottom = '20px';
+        toast.style.left = '50%';
+        toast.style.transform = 'translateX(-50%)';
+        toast.style.backgroundColor = '#10b981';
+        toast.style.color = 'white';
+        toast.style.padding = '10px 20px';
+        toast.style.borderRadius = '30px';
+        toast.style.fontSize = '14px';
+        toast.style.zIndex = '9999';
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.remove();
+        }, 2000);
+    }).catch(() => {
+        alert('Không thể copy, hãy copy thủ công: ' + text);
+    });
+}
+</script>
 
-        if(themeToggleBtn) {
-            themeToggleBtn.addEventListener('click', () => {
-                const isDark = document.documentElement.classList.contains('dark');
-                setTheme(isDark ? 'light' : 'dark');
-            });
-        }
-
-        function copyToClipboard(elementId) {
-            const textToCopy = document.getElementById(elementId).innerText;
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                const toast = document.getElementById('copy-toast');
-                toast.classList.remove('opacity-0');
-                setTimeout(() => {
-                    toast.classList.add('opacity-0');
-                }, 2000);
-            }).catch(err => {
-                console.error('Lỗi sao chép: ', err);
-            });
-        }
-    </script>
 </body>
 </html>
