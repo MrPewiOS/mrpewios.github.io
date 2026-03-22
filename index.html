@@ -32,7 +32,15 @@ body {
 </head>
 
 <body class="bg-[#0B0B15] text-white">
+<div id="toast"
+class="fixed top-6 left-1/2 -translate-x-1/2 px-5 py-2 rounded-full
+bg-white/10 backdrop-blur-xl border border-white/20
+text-white text-sm font-semibold
+opacity-0 scale-90 transition-all duration-300 shadow-2xl">
 
+✔️ Đã sao chép
+
+</div>
 <div class="max-w-2xl mx-auto p-4">
 
     <!-- HEADER -->
@@ -116,6 +124,27 @@ body {
     </div>
 
 </div>
+<script>
+function copyRepo() {
+    const text = "https://mrpewios.github.io/";
+    const btn = document.getElementById("copyBtn");
+    const toast = document.getElementById("toast");
 
+    navigator.clipboard.writeText(text);
+
+    if (navigator.vibrate) navigator.vibrate(50);
+
+    btn.classList.add("scale-90");
+    setTimeout(() => btn.classList.remove("scale-90"), 100);
+
+    toast.classList.remove("opacity-0", "scale-90");
+    toast.classList.add("opacity-100", "scale-100");
+
+    setTimeout(() => {
+        toast.classList.remove("opacity-100", "scale-100");
+        toast.classList.add("opacity-0", "scale-90");
+    }, 2000);
+}
+</script>
 </body>
 </html>
