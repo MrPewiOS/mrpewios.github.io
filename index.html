@@ -8,146 +8,105 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- ICON -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
 body {
     font-family: 'Nunito', sans-serif;
 }
 
-/* smooth scroll */
-html {
-    scroll-behavior: smooth;
+/* card hover */
+.card {
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
 }
 
 /* glow */
 .glow:hover {
-    box-shadow: 0 0 25px rgba(0,255,255,0.4);
-}
-
-/* card hover */
-.card-hover {
-    transition: all 0.3s;
-}
-.card-hover:hover {
-    transform: translateY(-5px) scale(1.02);
-}
-
-/* loading */
-#loader {
-    position: fixed;
-    inset: 0;
-    background: #0B0B15;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+    box-shadow: 0 0 25px rgba(0,255,255,0.3);
 }
 </style>
-
 </head>
 
 <body class="bg-[#0B0B15] text-white">
 
-<!-- LOADING -->
-<div id="loader">
-    <div class="w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
-</div>
-
-<!-- MAIN -->
 <div class="max-w-2xl mx-auto p-4">
 
     <!-- HEADER -->
     <div class="text-center mt-10">
 
         <img src="https://mrpewios.github.io/avatar.webp"
-        class="w-28 h-28 mx-auto rounded-full border-4 border-cyan-400 shadow-[0_0_40px_rgba(0,255,255,0.5)] hover:scale-110 transition duration-500">
+        class="w-28 h-28 mx-auto rounded-full border-4 border-cyan-400 shadow-[0_0_40px_rgba(0,255,255,0.5)] mb-4">
 
-        <h1 class="text-3xl font-extrabold mt-4 bg-gradient-to-r from-cyan-400 to-purple-400 text-transparent bg-clip-text">
-            MrPewiOS Repo 👑
-        </h1>
+        <h1 class="text-3xl font-extrabold">MrPewiOS Repo 👑</h1>
+        <p class="text-gray-400 text-sm mt-2">Kho IPA & Repo iOS</p>
 
-        <p class="text-gray-400 text-sm mt-2">
-           Nơi hội tụ IPA cho ae Jailbreak và NoJailbreak
-        </p>
     </div>
 
-    <!-- Add Nguồn -->
+    <!-- QUICK BUTTON -->
     <div class="grid grid-cols-2 gap-3 mt-8">
 
         <a href="cydia://source/https://mrpewios.github.io"
-        class="bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold py-3 rounded-xl text-center card-hover">
-        Cydia
+        class="bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold py-3 rounded-xl text-center card">
+        ➕ Cydia
         </a>
 
         <a href="sileo://source/https://mrpewios.github.io"
-        class="bg-white/10 backdrop-blur-xl border border-white/10 py-3 rounded-xl text-center card-hover">
-        Sileo
+        class="bg-white/5 border border-white/10 py-3 rounded-xl text-center card">
+        ⚡ Sileo
         </a>
 
         <a href="zbra://sources/https://mrpewios.github.io"
-        class="bg-white/10 backdrop-blur-xl border border-white/10 py-3 rounded-xl text-center card-hover">
-        Zebra
+        class="bg-white/5 border border-white/10 py-3 rounded-xl text-center card">
+        📦 Zebra
         </a>
 
-        <a href="https://mrpewios.github.io/page.html"
-        class="bg-white/10 backdrop-blur-xl border border-white/10 py-3 rounded-xl text-center card-hover">
-        Thư viện IPA
+        <a href="page.html"
+        class="bg-white/5 border border-white/10 py-3 rounded-xl text-center card">
+        🍎 Kho IPA
         </a>
 
     </div>
 
-    <!-- LIST -->
-    <div class="mt-10">
+    <!-- SOCIAL -->
+    <div class="flex justify-center gap-6 mt-12 text-2xl">
 
-        <h2 class="text-lg font-bold mb-4 text-gray-300">Thông tin cá nhân</h2>
-
-        <div class="space-y-3">
-
-            <a href="https://www.facebook.com/MrPewDz/"
-            class="flex items-center gap-4 p-4 bg-white/5 rounded-xl glow card-hover">
-
-                <div class="text-2xl">📘</div>
-                <div>
-                    <div class="font-bold">Facebook</div>
-                    <div class="text-sm text-gray-400">Theo dõi Fb admin</div>
-                </div>
-
-            </a>
-
-            <a href="https://vdns.io.vn/dot-Signed.mobileconfig"
-            class="flex items-center gap-4 p-4 bg-white/5 rounded-xl glow card-hover">
-
-                <div class="text-2xl">🛡️</div>
-                <div>
-                    <div class="font-bold">DNS Block Ads</div>
-                    <div class="text-sm text-gray-400">Block QC Free</div>
-                </div>
-
-            </a>
-
-        </div>
-    </div>
-
-    <!-- DONATE -->
-    <div class="text-center mt-10">
-        <a href="https://mrpewios.github.io/donate.html"
-        class="bg-pink-500 px-6 py-3 rounded-full font-bold hover:scale-110 transition">
-        ❤️ Donate Me
+        <a href="https://www.facebook.com/MrPewDz/" target="_blank"
+        class="hover:scale-125 hover:-translate-y-1 hover:text-blue-500 transition-all duration-300">
+            <i class="fab fa-facebook"></i>
         </a>
+
+        <a href="https://t.me/MrPewiOS" target="_blank"
+        class="hover:scale-125 hover:-translate-y-1 hover:text-cyan-400 transition-all duration-300">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://github.com/MrPewiOS" target="_blank"
+        class="hover:scale-125 hover:-translate-y-1 hover:text-white transition-all duration-300">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://x.com/mrpewios?s=21" target="_blank"
+        class="hover:scale-125 hover:-translate-y-1 hover:text-gray-300 transition-all duration-300">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#" target="_blank"
+        class="hover:scale-125 hover:-translate-y-1 hover:text-indigo-400 transition-all duration-300">
+            <i class="fab fa-discord"></i>
+        </a>
+
     </div>
 
     <!-- FOOTER -->
-    <div class="text-center text-gray-500 text-sm mt-12 pb-6">
-       Copyright © 2026 - 2031 QuangGiap • MrPewiOS Repo 👑
+    <div class="text-center text-gray-500 text-sm mt-10 pb-6">
+        © 2026 MrPewiOS
     </div>
 
 </div>
-
-<!-- SCRIPT -->
-<script>
-window.onload = () => {
-    document.getElementById("loader").style.display = "none";
-}
-</script>
 
 </body>
 </html>
