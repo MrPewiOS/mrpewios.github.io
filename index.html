@@ -1,78 +1,248 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Repositories</title>
-<style>
-  body{
-    font-family: Arial;
-    background:#f6f8fa;
-    margin:0;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  header{
-    background:#24292e;
-    color:#fff;
-    padding:14px;
-    text-align:center;
-    font-size:18px;
-  }
+    <title>MrPawiOS Repo Jailbreak</title>
 
-  .container{
-    max-width:700px;
-    margin:20px auto;
-    padding:0 12px;
-  }
+    <link rel="icon" href="assets/avatar.png">
 
-  .repo{
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:8px;
-    padding:12px;
-    margin-bottom:10px;
-    transition:0.2s;
-  }
+    <link rel="stylesheet" href="style.css">
 
-  .repo:hover{
-    transform: translateY(-2px);
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-  }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  .name{
-    font-weight:bold;
-    color:#0366d6;
-    margin-bottom:4px;
-  }
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-  .desc{
-    color:#555;
-    font-size:14px;
-  }
-</style>
 </head>
-
 <body>
 
-<header>Kho Repositories</header>
+<div id="particles"></div>
 
-<div class="container">
+<header>
 
-  <div class="repo">
-    <div class="name">AI Chatbot</div>
-    <div class="desc">Dự án chatbot trí tuệ nhân tạo</div>
-  </div>
+    <div class="logo">
+        <i class="fa-solid fa-code"></i>
+        MrPawiOS Repo
+    </div>
 
-  <div class="repo">
-    <div class="name">Website Bán Hàng</div>
-    <div class="desc">Trang thương mại điện tử đơn giản</div>
-  </div>
+    <nav>
 
-  <div class="repo">
-    <div class="name">API Quản Lý</div>
-    <div class="desc">REST API cho hệ thống quản lý</div>
-  </div>
+        <a href="#home" class="lang" data-vi="Trang chủ" data-en="Home">
+            Trang chủ
+        </a>
 
-</div>
+        <a href="#about" class="lang" data-vi="Giới thiệu" data-en="About">
+            Giới thiệu
+        </a>
+
+        <a href="#projects" class="lang" data-vi="Dự án" data-en="Projects">
+            Dự án
+        </a>
+
+        <a href="#contact" class="lang" data-vi="Liên hệ" data-en="Contact">
+            Liên hệ
+        </a>
+
+    </nav>
+
+    <div class="tools">
+
+        <button id="themeBtn">
+            🌙
+        </button>
+
+        <button id="langBtn">
+            VI
+        </button>
+
+    </div>
+
+</header>
+
+<section class="hero" id="home">
+
+    <div class="avatar">
+
+        <img src="assets/avatar.png" alt="Avatar">
+
+    </div>
+
+    <h1>MrPawiOS Repo</h1>
+
+    <h2 id="typing"></h2>
+
+    <p class="description lang"
+    data-vi="Chào mừng đến với repository của tôi."
+    data-en="Welcome to my repository.">
+
+        Chào mừng đến với repository của tôi.
+
+    </p>
+
+    <div class="social">
+
+        <a href="https://github.com/MrPewiOS">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://x.com/mrpewios?s=21">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://t.me/mrpewiosrepo">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/MrPewDz/">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2 class="section-title">
+        About Me
+    </h2>
+
+    <div class="glass-card">
+
+        <div class="info">
+
+            <div>
+                <span>Name</span>
+                <p>Your Name</p>
+            </div>
+
+            <div>
+                <span>Age</span>
+                <p>18</p>
+            </div>
+
+            <div>
+                <span>Country</span>
+                <p>Vietnam</p>
+            </div>
+
+            <div>
+                <span>Language</span>
+                <p>HTML / CSS / JS</p>
+            </div>
+
+            <div>
+                <span>Status</span>
+                <p class="online">
+                    🟢 Online
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">
+        Projects
+    </h2>
+
+    <div class="projects">
+
+        <div class="project">
+
+            <i class="fa-solid fa-folder-open"></i>
+
+            <h3>Repository One</h3>
+
+            <p>
+                Simple repository description.
+            </p>
+
+            <button>
+                View
+            </button>
+
+        </div>
+
+        <div class="project">
+
+            <i class="fa-solid fa-folder-open"></i>
+
+            <h3>Repository Two</h3>
+
+            <p>
+                Simple repository description.
+            </p>
+
+            <button>
+                View
+            </button>
+
+        </div>
+
+        <div class="project">
+
+            <i class="fa-solid fa-folder-open"></i>
+
+            <h3>Repository Three</h3>
+
+            <p>
+                Simple repository description.
+            </p>
+
+            <button>
+                View
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 class="section-title">
+        Contact
+    </h2>
+
+    <div class="glass-card">
+
+        <p>Email</p>
+        <h3>pewdzaivn@gmail.com</h3>
+
+        <br>
+
+        <p>GitHub</p>
+        <h3>github.com/MrPewiOS</h3>
+
+        <br>
+
+        <p>X</p>
+        <h3>x.com/mrpewios?s=21</h3>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        Designed & Developed by MrPewiOS ❤️
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
