@@ -11,10 +11,10 @@ SHA256: 4b3ba164e043ebfc62f2bbb8c3658797ea7f29bf3c8eafa714c79039f352f23e
 Section: Tweaks
 Description: Tiện ích Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies
 Author: iosdumpzzz
-Depiction: http://mrpewios.github.io/depictions/zone.html
+Depiction: http://mrpewios.github.io/repo/depictions/zone.html
 Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
 Name: Zone (Rootless)
-Sileodepiction: https://mrpewios.github.io/sileodepictions/zone.json
+Sileodepiction: https://mrpewios.github.io/repo/sileodepictions/zone.json
 
 Package: com.mrpewios.zone
 Version: 2.0.0
@@ -29,7 +29,7 @@ SHA256: 1be92688e7305fda5819b9923c2a37ff0064ccb116cd111989a789a92abb97e1
 Section: Tweaks
 Description: Tiện ích Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies
 Author: iosdumpzzz
-Depiction: http://mrpewios.github.io/depictions/zone.html
+Depiction: http://mrpewios.github.io/repo/depictions/zone.html
 Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
 Name: Zone (Roothide)
-Sileodepiction: https://mrpewios.github.io/sileodepictions/zone.json
+Sileodepiction: https://mrpewios.github.io/repo/sileodepictions/zone.json
