@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zone</title>
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --card: #18181c;
+      --border: #2a2a30;
+      --accent: #007AFF;
+      --text: #f0f0f5;
+      --muted: #888899;
+      --radius: 14px;
+      --green: #34c759;
+      --red: #ff453a;
+      --gold: #ffd60a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'SF Pro Text', sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      padding-bottom: 40px;
+    }
+
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      border: 1px solid var(--border);
+      border-top: none;
+    }
+    .banner-container img {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .hero {
+      background: linear-gradient(160deg, #0a1a2e 0%, #0d0d0f 60%);
+      padding: 24px 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .hero-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #007AFF, #00c6fb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(0,122,255,0.4);
+    }
+    .hero-icon.red { background: linear-gradient(135deg, #ff453a, #ff6b6b); }
+    .hero-icon.green { background: linear-gradient(135deg, #34c759, #30d158); }
+    .hero-icon.gold { background: linear-gradient(135deg, #ffd60a, #ff9f0a); }
+    .hero-icon.purple { background: linear-gradient(135deg, #a855f7, #7c3aed); }
+    .hero-icon.orange { background: linear-gradient(135deg, #ff8800, #ff5500); }
+    .hero-icon.pink { background: linear-gradient(135deg, #ff2d55, #ff6b8a); }
+
+    .hero-info h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+    }
+    .hero-info p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(0,122,255,0.18);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 20px;
+      margin-top: 6px;
+      letter-spacing: 0.2px;
+    }
+    .badge.green { background: rgba(52,199,89,0.18); color: var(--green); }
+    .badge.red { background: rgba(255,69,58,0.18); color: var(--red); }
+    .badge.gold { background: rgba(255,214,10,0.18); color: var(--gold); }
+    .badge.purple { background: rgba(168,85,247,0.18); color: #a855f7; }
+    .badge.orange { background: rgba(255,136,0,0.18); color: #ff8800; }
+
+    .screenshots-wrap {
+      overflow-x: auto;
+      padding: 20px 20px 4px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .screenshots-wrap::-webkit-scrollbar { display: none; }
+    .screenshots {
+      display: flex;
+      gap: 12px;
+    }
+    .screenshots img {
+      height: 260px;
+      width: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      background: var(--card);
+    }
+
+    .section {
+      margin: 20px 16px 0;
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .section-header {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 14px 16px 8px;
+    }
+    .desc-body {
+      padding: 0 16px 16px;
+      color: #c8c8d8;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .desc-body strong { color: var(--text); }
+    .desc-body .highlight { color: var(--accent); }
+    .desc-body .highlight-green { color: var(--green); }
+    .desc-body .highlight-red { color: var(--red); }
+    .desc-body .highlight-gold { color: var(--gold); }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-top: 1px solid var(--border);
+      gap: 12px;
+    }
+    .info-row:first-child { border-top: none; }
+    .info-label {
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .info-value {
+      font-size: 14px;
+      text-align: right;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .compat-pill {
+      background: rgba(52,199,89,0.15);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .compat-pill.red {
+      background: rgba(255,69,58,0.15);
+      color: var(--red);
+    }
+    .compat-pill.gold {
+      background: rgba(255,214,10,0.15);
+      color: var(--gold);
+    }
+    .compat-pill.purple {
+      background: rgba(168,85,247,0.15);
+      color: #a855f7;
+    }
+    .compat-pill.orange {
+      background: rgba(255,136,0,0.15);
+      color: #ff8800;
+    }
+
+    .changelog-entry {
+      padding: 12px 16px;
+      border-top: 1px solid var(--border);
+    }
+    .changelog-entry:first-child { border-top: none; }
+    .changelog-ver {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--accent);
+    }
+    .changelog-ver.green { color: var(--green); }
+    .changelog-ver.red { color: var(--red); }
+    .changelog-ver.gold { color: var(--gold); }
+    .changelog-ver.purple { color: #a855f7; }
+    .changelog-ver.orange { color: #ff8800; }
+    .changelog-date {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .changelog-notes {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #b0b0c0;
+      padding-left: 14px;
+    }
+    .changelog-notes li { margin-bottom: 3px; }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 28px;
+      padding: 0 20px;
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-icon { width: 64px; height: 64px; font-size: 30px; }
+      .hero-info h1 { font-size: 19px; }
+      .screenshots img { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== BANNER ===== -->
+  <div class="banner-container">
+    <img src="https://mrpewios.github.io/coverimage/mrpewiosrepo.png" alt="Jailbreak Banner" onerror="this.src='https://via.placeholder.com/800x250/18181c/007AFF?text=JAILBREAK+DEPICTIONS'"/>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ===== CARD 1: unc0ver ===== -->
+  <!-- ============================================================ -->
+  <div class="hero">
+    <div class="hero-icon">🔓</div>
+    <div class="hero-info">
+      <h1>Zone</h1>
+      <p>iosdumpzzz</p>
+      <span class="badge">v2.0.0</span>
+    </div>
+  </div>
+
+  <div class="screenshots-wrap">
+    <div class="screenshots">
+      <img src="https://mrpewios.github.io/infodebs/Zone - Screenshot/1.png" alt="Screenshot 1" />
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Mô tả</div>
+    <div class="desc-body">
+      <strong>Zone</strong> – Tinh chỉnh hình nền cho thiết bị dùng dạng .tendies .<br /><br />
+      Hỗ trợ <span class="highlight">tất cả thiết bị</span> từ iOS 14 tới iOS 17<br />
+      Sử dụng file dạng .tendies <span class="highlight-green">để cài file</span> vào máy<br /><br />
+      🔥 <strong>Các nguồn có file tendies</strong><br />
+      • FuJB<span class="highlight"> https://linkbio.co/sleeper</span><br />
+      • Cowabunga <span class="highlight"> https://cowabun.ga<span><br />
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Thông tin</div>
+    <div class="info-row">
+      <span class="info-label">Phiên bản</span>
+      <span class="info-value">2.0.0</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Tác giả</span>
+      <span class="info-value">iosdumpzzz</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Dung lượng</span>
+      <span class="info-value">1148 KB</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Ngày đăng tải</span>
+      <span class="info-value">1/7/2026</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Tương thích</span>
+      <span class="info-value"><span class="compat-pill">iOS 14 – 17</span></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Hỗ trợ</span>
+      <span class="info-value"><span class="compat-pill">A10 - A16</span></span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Lịch sử cập nhật</div>
+    <div class="changelog-entry">
+      <div class="changelog-ver">v2.0.0</div>
+      <div class="changelog-date">1/7/2026</div>
+      <ul class="changelog-notes">
+        <li>1. Nút thay thế được đổi thành nút chỉnh sửa, mới: chỉnh sửa nâng cao, nhấp vào nút chỉnh sửa để vào
+2.Khắc phục lỗi kẹt khi nhập mật khẩu trên màn hình khóa</li>
+        <li>3. Tối ưu hóa cử chỉ nhấp đúp để tránh vô tình kích hoạt
+          4.Khắc phục sự cố tương tác không thành công do trả lời cuộc gọi đến trong khi màn hình tắt</li>
+      </ul>
+    </div>
+    <div class="changelog-entry">
+      <div class="changelog-ver green">v2.0.0</div>
+      <div class="changelog-date">1/7/2026</div>
+      <ul class="changelog-notes">
+        <li>5. Tối ưu hóa hình nền video và giảm mức tiêu thụ điện năng</li>
+        <li>6. Tối ưu hóa màn hình tạm dừng và hình ảnh động trên màn hình sáng/li>
+      </ul>
+    </div>
+  </div>
