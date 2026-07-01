@@ -1,0 +1,109 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#007AFF",
+  "tabs": [
+    {
+      "tabname": "Chi tiết",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{160, 284}",
+          "screenshots": [
+            {
+              "url": "https://mrpewios.github.io/infodebs/Zone - Screenshot/1.png",
+              "accessibilityText": "Zone Screenshot 1"
+            {
+              "url": "https://mrpewios.github.io/infodebs/Zone - Screenshot/2.png",
+              "accessibilityText": "Zone Screenshot 2"
+            }
+            }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Mô tả",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownTextView",
+          "markdown": "**JumpSelect VH** - JumpSelect Việt Hoá.\n\nBộ chặn chuyển ứng dụng ",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Thông tin",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Phiên bản",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Tác giả",
+          "text": "iosdumpzzz"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Dung lượng",
+          "text": "476 KB"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Ngày đăng tải",
+          "text": "1/7/2026"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Tương thích",
+          "text": "iOS 14 – 17"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        }
+      ]
+    },
+    {
+      "tabname": "Lịch sử",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Phiên bản 1.0.0",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownTextView",
+          "markdown": "- Phát hành\n- Hỗ trợ rootless,roothide",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Ngày phát hành",
+          "text": "1/7/2026"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        }
+      ]
+    }
+  ]
+}
