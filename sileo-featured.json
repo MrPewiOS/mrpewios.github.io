@@ -1,0 +1,17 @@
+{
+    "class": "FeaturedBannersView",
+    "itemSize": "{260, 145}",
+    "itemCornerRadius": 10,
+    "banners": [
+        {
+            "title": "Việt Nam Number 1",
+            "package": "com.mrpewios.zone",
+            "url": "https://mrpewios.github.io/banners/vienam.png"
+        },
+        {
+            "title": "MrPewiOS Repo Jaibreak",
+            "package": "",
+            "url": "https://mrpewios.github.io/banners/MrPewiOS.png"
+        }
+    ]
+}
