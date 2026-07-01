@@ -1,0 +1,35 @@
+Package: com.mrpewios.zone
+Version: 2.0.0
+Architecture: iphoneos-arm64
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
+Filename: debs/com.mrpewios.zone_2.0.0_iphoneos-arm64.deb
+Size: 208048
+MD5sum: e2e3b79698952775d4456dadf73c7273
+SHA1: 72adfd7a2dbddf30db08c76df01980949527dcf9
+SHA256: 4b3ba164e043ebfc62f2bbb8c3658797ea7f29bf3c8eafa714c79039f352f23e
+Section: Tweaks
+Description: Tiện ích Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/zone.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: Zone (Rootless)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/zone.json
+
+Package: com.mrpewios.zone
+Version: 2.0.0
+Architecture: iphoneos-arm64e
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
+Filename: debs/com.mrpewios.zone_2.0.0_iphoneos-arm64e.deb
+Size: 211212
+MD5sum: 9ea6c5767ad6d7934ce5ea333f037f6b
+SHA1: aec00d4679b708259ca1fc71608e13b0dcd39d55
+SHA256: 1be92688e7305fda5819b9923c2a37ff0064ccb116cd111989a789a92abb97e1
+Section: Tweaks
+Description: Tiện ích Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/zone.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: Zone (Roothide)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/zone.json
