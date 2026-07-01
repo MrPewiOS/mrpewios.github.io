@@ -33,3 +33,39 @@ Depiction: http://mrpewios.github.io/repo/depictions/zone.html
 Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
 Name: Zone (Roothide)
 Sileodepiction: https://mrpewios.github.io/repo/sileodepictions/zone.json
+
+Package: com.mrpewios.jumpselect
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.mrpewios.jumpselect_1.0.0_iphoneos-arm64.deb
+Size: 61064
+MD5sum: 2a69bd45e9bd77d2a20ab4b7876421fb
+SHA1: 90745f2cd32ddcd5a1a518b461d3053ba474b3d8
+SHA256: 3bc94a03a4e54f7f6414ec53fcb0c6f987c89cc927ba18ee43c33dc523c9b508
+Section: Tweaks
+Description: Bộ chặn chuyển sang ứng dụng khác
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/jumpselect.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: JumpSelect (Rootless)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/jumpselect.json
+
+Package: com.mrpewios.jumpselect
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.mrpewios.jumpselect_1.0.0_iphoneos-arm64e.deb
+Size: 63020
+MD5sum: 013a7563e654b9fbdbee7950a295511c
+SHA1: 773dfb01bd546b6757d55026478a13001bf855bf
+SHA256: e4a70117d4ea947434486b87550fd6569acb9ed429ea8bc982d9100bfdab8bd8
+Section: Tweaks
+Description: Bộ chặn chuyển sang ứng dụng khác
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/jumpselect.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: JumpSelect (Rootless)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/jumpselect.json
