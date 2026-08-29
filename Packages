@@ -95,7 +95,7 @@ Filename: debs/com.mrpewios.opaboutphone_1.2.0_iphoneos-arm64e.deb
 Size: 143806
 MD5sum: c5751bbe0629333cd27c64c6a08dae28
 SHA1: 61f7599ac08f9e9886b9b539f88a73d4cff3764e
-SHA256: 200f8c24581ac40dbb01a3f135592a834ceeề7bc92c1d1fc5c5a763a8134761d
+SHA256: 
 Section: Tweaks
 Description: Trang giới thiệu về OxygenOS/ColorOS-style cho ứng dụng Cài đặt iOS
 Author: Lumid
