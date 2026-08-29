@@ -1,0 +1,103 @@
+Package: com.mrpewios.zone
+Version: 2.0.0
+Architecture: iphoneos-arm64
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
+Filename: debs/com.mrpewios.zone_2.0.0_iphoneos-arm64.deb
+Size: 208048
+MD5sum: e2e3b79698952775d4456dadf73c7273
+SHA1: 72adfd7a2dbddf30db08c76df01980949527dcf9
+SHA256: 4b3ba164e043ebfc62f2bbb8c3658797ea7f29bf3c8eafa714c79039f352f23e
+Section: Tweaks
+Description: Tiện ích Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/zone.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: Zone (Rootless)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/zone.json
+
+Package: com.mrpewios.zone
+Version: 2.0.0
+Architecture: iphoneos-arm64e
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
+Filename: debs/com.mrpewios.zone_2.0.0_iphoneos-arm64e.deb
+Size: 211212
+MD5sum: 9ea6c5767ad6d7934ce5ea333f037f6b
+SHA1: aec00d4679b708259ca1fc71608e13b0dcd39d55
+SHA256: 1be92688e7305fda5819b9923c2a37ff0064ccb116cd111989a789a92abb97e1
+Section: Tweaks
+Description: Tiện ích Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/zone.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: Zone (Roothide)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/zone.json
+
+Package: com.mrpewios.jumpselect
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.mrpewios.jumpselect_1.0.0_iphoneos-arm64.deb
+Size: 61064
+MD5sum: 2a69bd45e9bd77d2a20ab4b7876421fb
+SHA1: 90745f2cd32ddcd5a1a518b461d3053ba474b3d8
+SHA256: 3bc94a03a4e54f7f6414ec53fcb0c6f987c89cc927ba18ee43c33dc523c9b508
+Section: Tweaks
+Description: Bộ chặn chuyển sang ứng dụng khác
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/jumpselect.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: JumpSelect (Rootless)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/jumpselect.json
+
+Package: com.mrpewios.jumpselect
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.mrpewios.jumpselect_1.0.0_iphoneos-arm64e.deb
+Size: 63020
+MD5sum: 013a7563e654b9fbdbee7950a295511c
+SHA1: 773dfb01bd546b6757d55026478a13001bf855bf
+SHA256: e4a70117d4ea947434486b87550fd6569acb9ed429ea8bc982d9100bfdab8bd8
+Section: Tweaks
+Description: Bộ chặn chuyển sang ứng dụng khác
+Author: iosdumpzzz
+Depiction: http://mrpewios.github.io/depictions/jumpselect.html
+Icon: file:///Applications/Cydia.app/Sections/tinhchinhh1.png
+Name: JumpSelect (Rootless)
+Sileodepiction: https://mrpewios.github.io/sileodepictions/jumpselect.json
+
+Package: com.mrpewios.opaboutphone_1.2.0_iphoneos-arm64
+Version: 1.2.0
+Architecture: iphoneos-arm64
+Maintainer: MrPewiOS
+Depends: mobilesubstrate (>=0.9.5000), preferenceloader, firmware (>=15.0)
+Filename: debs/com.mrpewios.opaboutphone_1.2.0_iphoneos-arm64.deb
+Size: 124972
+MD5sum: cebee8c0f81114993364c0fe73dfa040
+SHA1: cbcc0c5cea688b07ecf7beb08f4740565d092c91
+SHA256: ebb1f4f405babc8831ae6e83891733b3707a1ad41e49d6470e83b207a9997b64
+Section: Tweaks
+Description: Trang giới thiệu về OxygenOS/ColorOS-style cho ứng dụng Cài đặt iOS
+Author: Lumid
+Icon: file:///var/jb/Library/PreferenceBundles/OPAboutPhonePrefs.bundle/icon-large.png
+Name: OP About Phone (Rootless)
+
+Package: com.mrpewios.zone_2.1.0_iphoneos-arm64
+Version: 2.1.0
+Architecture: iphoneos-arm64
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport, firmware (>=14.0)
+Filename: debs/com.mrpewios.zone_2.1.0_iphoneos-arm64.deb
+Size: 160152
+MD5sum: 6a6167d0a5eb41fe4d60814ebc633d38
+SHA1: db44f3f73013944e62273de6e3bc89ee9ab48c61
+SHA256: cc9d82f7a587b5111c690aa8f1683d82099b65171ec5e4d81f2f19ebb1508ae4
+Section: Tweaks
+Description: Tweak Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies. hỗ trợ iOS 14-17
+Author: iosdumpzzz
+Icon: file:///var/jb/Library/PreferenceBundles/ZonePrefs.bundle/icon.png
+Name: Zone (Rootless)
