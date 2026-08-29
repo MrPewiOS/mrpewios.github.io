@@ -86,6 +86,22 @@ Author: Lumid
 Icon: file:///var/jb/Library/PreferenceBundles/OPAboutPhonePrefs.bundle/icon-large.png
 Name: OP About Phone (Rootless)
 
+Package: com.mrpewios.opaboutphone_1.2.0_iphoneos-arm64e
+Version: 1.2.0
+Architecture: iphoneos-arm64e
+Maintainer: MrPewiOS
+Depends: mobilesubstrate (>=0.9.5000), preferenceloader, firmware (>=15.0)
+Filename: debs/com.mrpewios.opaboutphone_1.2.0_iphoneos-arm64e.deb
+Size: 143806
+MD5sum: c5751bbe0629333cd27c64c6a08dae28
+SHA1: 61f7599ac08f9e9886b9b539f88a73d4cff3764e
+SHA256: 200f8c24581ac40dbb01a3f135592a834ceeề7bc92c1d1fc5c5a763a8134761d
+Section: Tweaks
+Description: Trang giới thiệu về OxygenOS/ColorOS-style cho ứng dụng Cài đặt iOS
+Author: Lumid
+Icon: file:///var/jb/Library/PreferenceBundles/OPAboutPhonePrefs.bundle/icon-large.png
+Name: OP About Phone (Roothide)
+
 Package: com.mrpewios.zone_2.1.0_iphoneos-arm64
 Version: 2.1.0
 Architecture: iphoneos-arm64
@@ -101,3 +117,19 @@ Description: Tweak Zone được sử dụng để thiết lập hình nền/vid
 Author: iosdumpzzz
 Icon: file:///var/jb/Library/PreferenceBundles/ZonePrefs.bundle/icon.png
 Name: Zone (Rootless)
+
+Package: com.mrpewios.zone_2.1.0_iphoneos-arm64e
+Version: 2.1.0
+Architecture: iphoneos-arm64e
+Maintainer: MrPewiOS
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport, firmware (>=14.0)
+Filename: debs/com.mrpewios.zone_2.1.0_iphoneos-arm64e.deb
+Size: 207068
+MD5sum: 72449dab373bcf4ae7bacf7ae1472b53
+SHA1: 01b2adacf1312839cb37ff33a9b3841a15f6941e
+SHA256: 6eea85bd8688abf63c8ba2f825ca2977436bc0cf534cf4ab28ab537f04f3dfeb
+Section: Tweaks
+Description: Tweak Zone được sử dụng để thiết lập hình nền/video tương tác dạng .tendies. hỗ trợ iOS 14-17
+Author: iosdumpzzz
+Icon: file:///var/jb/Library/PreferenceBundles/ZonePrefs.bundle/icon.png
+Name: Zone (Roothide)
