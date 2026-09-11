@@ -5,12 +5,12 @@
     "banners": [
         {
             "title": "Việt Nam Number 1",
-            "package": "com.mrpewios.zone",
+            "package": "dev.mrpew6007.jikam",
             "url": "https://mrpewios.github.io/banners/vietnam.png"
         },
         {
             "title": "MrPewiOS Repo Jaibreak",
-            "package": "",
+            "package": "dev.mrpew6007.dynamicx",
             "url": "https://mrpewios.github.io/banners/MrPewiOS.png"
         }
     ]
